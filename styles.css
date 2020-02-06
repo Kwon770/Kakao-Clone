@@ -1,0 +1,14 @@
+/* 
+propety-name: value : Property
+selctor { } : Selctor
+.class #id
+
+selector (id, class, tag name) {
+  property-name: value;
+}
+
+*/
+
+h1 {
+  color: green;
+}

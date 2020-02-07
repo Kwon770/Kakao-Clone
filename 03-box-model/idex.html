@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      /* Border - 박스의 경계 
+        Padding - Space betwerrn Border and Content 
+        Margin - Space outside of Border
+        */
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+        background-color: green;
+        height: 100%;
+      }
+      .box {
+        background-color: yellow;
+        width: 50%;
+        height: 50%;
+        /* padding = padding-top, bottom, left ,right*/
+        padding: 50px;
+        /* first value = top, bottom / second value = left, right*/
+        /* [SEQUNCE] top - right - bottom - left */
+        margin: 20px 10px;
+      }
+      .inside-box {
+        background-color: blue;
+        width: 50%;
+        height: 50%;
+        border: 5px dashed red;
+        /* SHORTCUT [SEQUNCE][width - style - color]
+        border-width: 5px;
+        border-style: red;
+        border-style: dashed;
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inside-box"></div>
+    </div>
+  </body>
+</html>

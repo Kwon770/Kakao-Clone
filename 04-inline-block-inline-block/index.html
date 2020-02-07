@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline Example</title>
+  </head>
+  <style>
+    /* 
+      inline : Box가 아닌 Text로 취급 (높이 너비가 없는) (요소 옆에 요소가 올 수 있음)
+      block : 각 요소(box) 옆에 요소가 없게 유지
+      inline-block : 각 요소(box) 옆에 요소가 오도록 허용
+      */
+    .box {
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      display: inline;
+    }
+  </style>
+  <body>
+    <span class="box">1</span>
+    <span class="box">1</span>
+    <span class="box">1</span>
+  </body>
+</html>

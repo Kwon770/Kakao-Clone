@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors and Pseudo Selectors</title>
+    <style>
+      /* Pseudo-Selector 가상 셀렉터 : tag name, class, id 와 같은 html 없이 선택하는 방법 
+        [Selector kind]
+        Attribute [type="submit"] [ required=":required"] : 해당 속성을 가진 박스를 선택
+        Mark [boxA + boxB] : boxA 와 boxB 는 형제 관계
+        Mark [boxA > boxB] : boxA 의 직계, boxB 들만 선택 => 이 직계는 기본 속성 .boxB{} 보다 우선됨
+
+      */
+
+      /* input[type="submit"] {
+        background-color: red;
+      } */
+      input[required="required"] {
+        background-color: blue;
+      }
+      input + .box {
+        border: 1px solid gold;
+      }
+      .container > .box {
+        background-color: yellow;
+      }
+      .box {
+        background-color: green;
+        display: block;
+        height: 100px;
+        border: 1px solid black;
+      }
+      .child {
+        background-color: purple;
+        width: 40px;
+      }
+      /* .box:first-child {
+        background-color: pink;
+      }
+      .box:nth-child(2n) {
+        background-color: red;
+      }
+      .box:last-child {
+        background-color: pink;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="box child"></div>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box">
+        <input type="password" required="required" />
+        <input type="submit" required="required" />
+        <!--class="submit"-->
+      </div>
+    </div>
+  </body>
+</html>

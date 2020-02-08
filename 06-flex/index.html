@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      .body,
+      html {
+        height: 100%;
+      }
+      /*Flex only apply parent element*/
+      .father {
+        display: flex;
+        height: 100%;
+        /* justify-content : Vertical align > align-items : Horizontal align*/
+        justify-content: space-between;
+        align-items: flex-start;
+        /* flex-direction : row [default] , column -> justify Horizontal > align Vertical*/
+        flex-direction: column-reverse;
+        /* flex-wrap : nowrap [default] => if there is no space enough, make box small
+                        wrap => add new line */
+        flex-wrap: wrap-reverse;
+      }
+      .box {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Flex make parent can manage all child element in once
+    father flex box > box
+    box flex box > 1 2 3
+    -->
+    <div class="father">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+    </div>
+  </body>
+</html>

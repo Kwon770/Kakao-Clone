@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      body,
+      html {
+        /* height100% margin0 padding0 -> 브라우저 디폴트 값을 상쇄시키기 위함*/
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      /* POSITION FIXED
+      position: static => static position (unchangable) [default value of position]
+      position: fixed => move according to scroll
+
+      #boxOne {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: static;
+      }
+      #boxTwo {
+        height: 300px;
+        width: 100%;
+        background-color: green;
+        position: fixed;
+        bottom: 30%;
+        left: 0;
+      }
+      */
+
+      /*
+      position: absolute => if there isnt parent box that is relative position
+      : Set position on the ouside like static
+      => if there is parent element that is relative
+      : Set position on the parent box
+      */
+      .abs-box {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+      }
+      .abs-child {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="abs-box">
+      <div class="abs-child"></div>
+    </div>
+    <!-- POSITION FIXED
+    <div id="boxOne">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+      <div class="box-child"></div>
+    </div>
+-->
+  </body>
+</html>

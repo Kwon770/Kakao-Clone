@@ -4,6 +4,7 @@
 [[Google Fonts 이용한 font 추가 ]]
 필요없는 폰트를 추가하면 Load Speed 가 저하되므로 필요한 폰트만
 Customize 를 이용하여 선택후 @import
+https://fonts.google.com/?selection.family=Open+Sans:400,700
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 

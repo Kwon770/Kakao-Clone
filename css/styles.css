@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "status-bar.css";
+@import "header.css";
 /* 
 [[Google Fonts 이용한 font 추가 ]]
 필요없는 폰트를 추가하면 Load Speed 가 저하되므로 필요한 폰트만
@@ -14,4 +15,9 @@ body {
   color: #020202;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  /* Get color from parent element ( cause a tags is purple (link)) */
+  color: inherit;
 }

@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "status-bar.css";
 @import "header.css";
+@import "nav-bar.css";
 /* 
 [[Google Fonts 이용한 font 추가 ]]
 필요없는 폰트를 추가하면 Load Speed 가 저하되므로 필요한 폰트만
@@ -8,6 +9,16 @@ Customize 를 이용하여 선택후 @import
 https://fonts.google.com/?selection.family=Open+Sans:400,700
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+/* 
+기본 설정에선 padding으로 인해 Content의 공간이 줄어들지 않게 하기위해
+자동으로 box 의 크기를 늘림 => 브라우저에 맞지 않은 크기가 되어 요소 손실
+box-sizing: border-box; => Content의 공간이 줄어들어도 되니
+box의 크기를 변화시키지 않음
+*/
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: white;

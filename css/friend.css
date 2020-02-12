@@ -1,5 +1,4 @@
 .friend {
-  background-color: red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,9 +7,40 @@
 .friend .friend__avatar {
   width: 50px;
   /* 크기가 변하므로 (아래 g-avatar) radius 를 상대 크기로*/
-  border-radius: 35%;
+  border-radius: 38%;
+  margin-right: 15px;
+}
+
+.friend .friend__avatar.m-avatar {
+  width: 60px;
 }
 
 .friend .friend__avatar.g-avatar {
-  /* width: 70px; */
+  width: 70px;
+}
+
+.friend .friend__column {
+  /* flex의 align-items: stretch [Default]*/
+  display: flex;
+  align-items: center;
+}
+
+.friend__content .friend__name {
+  display: block;
+  margin-bottom: 5x;
+}
+
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp {
+  opacity: 0.6;
+}
+
+.friend__content .friend__bottom-text {
+  font-size: 14px;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp {
+  font-size: 12px;
 }

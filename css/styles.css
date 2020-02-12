@@ -33,4 +33,5 @@ body {
 a {
   /* Get color from parent element ( cause a tags is purple (link)) */
   color: inherit;
+  text-decoration: none;
 }

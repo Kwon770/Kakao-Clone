@@ -1,0 +1,16 @@
+.friend {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  width: 50px;
+  /* 크기가 변하므로 (아래 g-avatar) radius 를 상대 크기로*/
+  border-radius: 35%;
+}
+
+.friend .friend__avatar.g-avatar {
+  /* width: 70px; */
+}

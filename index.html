@@ -46,18 +46,23 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img class="chat__avatar g-avatar" src="images/avatar.jpg" />
-              <div class="chat__content">
-                <span class="chat__username">Inkyung</span>
-                <span class="chat__preview">Going home</span>
+            <!-- You must not use li in li -->
+            <div class="chats-chat friend friend--lg">
+              <div class="friend_column">
+                <img class="g-avatar friend__avatar" src="images/avatar.jpg"></img>
+                <div class="friend__content">
+                  <span class="firend__name">Inkyung</span>
+                  <span class="friend__bottom-text">Going Home!</span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
-            </div>
+              <div class="friend__column">
+                <div class="friend__now-listening">
+                  <span class="chat__timestamp">Yesterday</span>
+                </div>
+              </div>
+            </li
           </a>
-        </li>
+        </div>
       </ul>
     </main>
     <nav class="nav">

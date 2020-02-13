@@ -3,6 +3,7 @@
 @import "header.css";
 @import "nav-bar.css";
 @import "friend.css";
+@import "friends.css";
 /* 
 [[Google Fonts 이용한 font 추가 ]]
 필요없는 폰트를 추가하면 Load Speed 가 저하되므로 필요한 폰트만

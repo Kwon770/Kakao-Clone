@@ -1,0 +1,56 @@
+/* 브라우저에 꽉 차게 하기위해서 padding 을 0우로 설정
+=> 다만 header, status-bar은 padding 이 필요하므로 따로 설정을 함 */
+.chat-body {
+  padding: 0;
+}
+
+.chat-body .header,
+.chat-body .status-bar {
+  padding: 0px 20px;
+}
+
+.chat {
+  background-image: url("../images/chatBg.png");
+  /* vh(viowportHeight) vw(viewportWidth) 
+  1vh: viewport(screen) 높이의 1% */
+  min-height: 100vh;
+}
+
+.chat__write {
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  /* fixed 를 가운데 정렬하는 법*/
+  bottom: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcfcfc;
+  padding: 0px 20px;
+  border-radius: 40px;
+  /* horizontal len, vertical len, blur amount, color */
+  /* first shadow option, second shadow option -> make two shadow */
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.chat__write i {
+  font-size: 22px;
+}
+
+.chat__write-column:nth-child(2) {
+  width: 80%;
+}
+
+.chat__write-column input {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+}
+
+.chat__write-column input:focus {
+  outline: none;
+}

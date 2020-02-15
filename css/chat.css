@@ -1,15 +1,18 @@
 .header-wrapper {
   position: fixed;
+  z-index: 2;
   top: 0px;
   width: 100%;
   padding: 5px 0px;
   background-color: white;
+  box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
-/* 브라우저에 꽉 차게 하기위해서 padding 을 0우로 설정
+/* 브라우저에 꽉 차게 하기위해서 padding 을 0으로 설정
 => 다만 header, status-bar은 padding 이 필요하므로 따로 설정을 함 */
 .chat-body {
-  padding: 0;
+  padding: 10px 0px;
   padding-top: 100px;
 }
 
@@ -153,10 +156,23 @@
   align-self: flex-end;
 }
 
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
 .incoming-message img {
   width: 30px;
   border-radius: 15px;
   margin-right: 15px;
+  box-shadow: rgba(50, 50, 93, 0.247059) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.298039) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.0235294) 0px -6px 16px -6px;
+  /* animation: spin 1s linear infinite; */
 }
 
 .message .message__bubble {

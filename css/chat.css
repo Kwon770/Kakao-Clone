@@ -1,7 +1,16 @@
+.header-wrapper {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 5px 0px;
+  background-color: white;
+}
+
 /* 브라우저에 꽉 차게 하기위해서 padding 을 0우로 설정
 => 다만 header, status-bar은 padding 이 필요하므로 따로 설정을 함 */
 .chat-body {
   padding: 0;
+  padding-top: 100px;
 }
 
 .chat-body .header,
@@ -10,11 +19,11 @@
   padding-top: 10px;
 }
 
-.chat-screen {
+.chat-body {
   background-image: url("../images/chatBg.png");
   /* vh(viowportHeight) vw(viewportWidth) 
   1vh: viewport(screen) 높이의 1% */
-  min-height: 100vh;
+  min-height: 1000vh;
 }
 
 .chat__write {

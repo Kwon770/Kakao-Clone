@@ -1,9 +1,12 @@
-KakaoTalk Design Clone | HTML & CSS
-====
+# KakaoTalk Design Clone | HTML & CSS
 
 ## [HERE IS LINK !](https://kwon770.github.io/Kakao-Clone/friends.html)
 
+---
 
+| Alert about screen size with media queary |
+| :---------------------------------------: |
+|     ![](./images/SmallerPreview.jpg)      |
 
 |          Friend Screen          |        Chat List Screen        |          Chat Screen          |
 | :-----------------------------: | :----------------------------: | :---------------------------: |

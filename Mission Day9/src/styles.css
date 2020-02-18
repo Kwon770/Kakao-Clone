@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: rgb(211, 211, 211);
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 20px;
+  padding: 0;
+  margin-left: 30%;
+  height: 500px;
+  width: 300px;
+}
+
+.goods__img {
+  border-radius: 20px;
+  height: 300px;
+  width: 300px;
+}
+
+.goods__desc {
+  padding: 0px 20px;
+}
+
+.goods__desc-desc,
+.infor__review-amount {
+  opacity: 0.5;
+  /* line-height: 50%; */
+}
+
+.goods__infor {
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goods__infor-price {
+  margin-top: 10px;
+}
+
+.goods__infor__review {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+i,
+.infor__review-amount {
+  margin: 0px 2px;
+}
+
+/* div, p: can take margin on all sides (Block Level element)
+ span: can take horizontally only (Inline Level element)
+To Apply margin on all side (padding, etc),  Set display: inline-block || block
+*/
+.infor__review-amount {
+  display: block;
+  padding-top: 5px;
+}
+
+/* ---------------- */
+
+/* .profile__background--container {
+  position: relative;
+  background-color: red;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 300px;
+  width: 300px;
+} */
+
+.profile__background {
+  /* position: absolute; */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 300px;
+  width: 300px;
+}
+
+#profile__background-holder {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.profile__img {
+  position: absolute;
+  top: 80%;
+  left: 32%;
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  border-radius: 80px;
+}
+
+.profile__btn-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  width: 110px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.btn__text {
+  margin: 11px;
+}
+
+.profile__infor {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__infor-name {
+  margin-bottom: 5px;
+}
+
+.profile__follow-btn {
+  background-color: #34b4d4;
+}
+
+.profile__message-btn {
+  background-color: #bf3fcf;
+}

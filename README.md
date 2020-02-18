@@ -2,8 +2,6 @@
 
 ## [HERE IS LINK !](https://kwon770.github.io/Kakao-Clone/friends.html)
 
----
-
 | Alert about screen size with media queary |
 | :---------------------------------------: |
 |     ![](./images/SmallerPreview.jpg)      |

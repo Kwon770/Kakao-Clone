@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(216, 216, 216);
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.login-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px 150px;
+  padding: 40px 20px;
+  width: 400px;
+  height: 900px;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.login-page__title {
+  margin-bottom: 80px;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1.5px solid rgb(236, 236, 236);
+  font-size: 15px;
+}
+
+input::placeholder {
+  color: rgb(190, 190, 190);
+  padding-left: 20px;
+}
+
+.help-btn {
+  color: rgb(255, 116, 116);
+  text-decoration: none;
+  margin: 20px 10px;
+}
+
+.login-page__forgot-ps-btn {
+  align-self: flex-end;
+}
+
+.login-page__isRemember-box {
+  align-self: flex-start;
+  margin: 15px 0px;
+}
+
+.btn {
+  border-radius: 40px;
+  padding: 17px 0px;
+  margin: 30px 20px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+.login-page__login-btn {
+  margin-top: 70px;
+  background-color: rgb(255, 116, 116);
+  width: 100%;
+  height: 60px;
+}
+
+.login-page__title-between-btn {
+  align-self: flex-start;
+}
+
+.login-page__sns-btn-list {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.login-page__facebook-btn {
+  width: 160px;
+  height: 60px;
+  background-color: #475a95;
+}
+
+.login-page__twitter-btn {
+  width: 160px;
+  height: 60px;
+  background-color: #5da2f2;
+}
+
+.login-page__help {
+  align-self: flex-start;
+}

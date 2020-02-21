@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+h1,
+h2,
+h3,
+h5 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(172, 172, 172);
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  color: #010d3c;
+  font-weight: 600;
+}
+
+.phone {
+  margin: 50px;
+  background-color: rgb(245, 245, 245);
+  width: 350px;
+  height: 700px;
+  border-radius: 40px;
+  box-shadow: inset -6px -6px 15px rgba(145, 160, 180, 0.45),
+    30px 30px 40px rgba(118, 146, 180, 0.18);
+  padding: 20px;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  background: rgb(241, 242, 246);
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 35px;
+}
+
+.page {
+  padding: 0px 20px;
+}
+
+.popular__title-holder,
+.popular__menu-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.popular__title-holder {
+  margin-bottom: 15px;
+}
+
+.popular__viewMore-btn-title {
+  color: #d84b27;
+}
+
+.popular__menu-btn {
+  position: relative;
+}
+
+.popular__menu-img {
+  border-radius: 15px;
+  width: 130px;
+  height: 80px;
+}
+
+.popular__menu-blur {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  width: 130px;
+  height: 80px;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.61),
+    rgba(0, 0, 0, 0)
+  );
+  color: white;
+  text-align: center;
+  padding-top: 27px;
+}
+
+.other__recips-item {
+  margin: 10px 0px;
+  padding: 0px 15px;
+  background-color: white;
+  width: 270px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other__recips-count {
+  margin-top: 3px;
+  opacity: 0.5;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}

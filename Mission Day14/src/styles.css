@@ -1,0 +1,136 @@
+h4 {
+  color: white;
+  margin: 0;
+}
+
+h5 {
+  color: #f03674;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 450px;
+}
+
+.icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.holder:nth-child(1) > .icon-bg {
+  background-color: #249c92;
+}
+
+.infor {
+  position: absolute;
+  background-color: #283a48;
+  transition: all 0.3s ease-in-out;
+}
+
+.camera-infor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0px;
+  top: 0px;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+}
+
+.camera-infor .infor__holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infor-btn {
+  padding: 10px;
+  background-color: #f03674;
+  color: white;
+}
+
+.holder:nth-child(1) .icon-bg:hover > .infor {
+  opacity: 1;
+  transform: translate(15px, 15px);
+}
+
+.holder:nth-child(2) > .icon-bg {
+  background-color: #ff7971;
+}
+
+.center-infor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0px;
+  bottom: 0px;
+  width: 300px;
+  height: 100px;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.center-infor .infor__holder,
+.safari-infor .infor__holder {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.center-infor .infor-btn,
+.safari-infor .infor-btn {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.holder:nth-child(2) .icon-bg:hover > .infor {
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+.holder-bg {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #283a48;
+}
+
+.holder:nth-child(3) .icon-bg {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3dbde9;
+}
+
+.safari-infor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0px;
+  bottom: 0px;
+  width: 300px;
+  height: 100px;
+}
+
+.holder:nth-child(3) .icon-bg {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+.holder:nth-child(3) .icon-bg:hover {
+  transform: scale(0.4);
+}
